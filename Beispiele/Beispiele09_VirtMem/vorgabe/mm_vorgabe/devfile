@@ -1,0 +1,1 @@
+mknod /dev/mm c 255 0

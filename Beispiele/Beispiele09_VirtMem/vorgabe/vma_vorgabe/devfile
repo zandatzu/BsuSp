@@ -1,0 +1,1 @@
+mknod /dev/vma c 256 0

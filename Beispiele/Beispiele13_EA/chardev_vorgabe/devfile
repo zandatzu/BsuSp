@@ -1,0 +1,1 @@
+mknod /dev/mychr c 256 0

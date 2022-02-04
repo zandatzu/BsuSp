@@ -1,0 +1,19 @@
+Die nachstehende Beschreibung ist für das Modul mm.Beschreibung.
+Für das Modul vma ist der Ablauf genauso.
+
+Erster Testlauf
+---------------
+
+1. Übersetzen Sie das Kernel-Modul mm mit: make
+2. Laden Sie das Kernel-Modul mit: sudo insmod mm.ko
+3. Überprüfen Sie, ob das Modul geladen wurde mit: dmesg
+4. Erzeugen Sie die Geräte-Datei /dev/mm mit: sudo ./devfile
+5. Übersetzen Sie die Test-App: gcc -o test test.c
+6. Starten Sie die Test-App mit: sudo ./test
+7. Sie sollten nun eine Text-Ausgabe sehen, welche Daten ausgibt, die vom Kernel-Modul erzeugt wurden
+8. Öffnen Sie nun mm.c und ergänzen Sie die Funktion mm_read
+
+Kernel-Modul erneut laden
+-------------------------
+1. Entfernen Sie zunächst das geladene Kernel-Modul mit: sudo rmmod mm
+2. Laden Sie anschließend die neue Version des Kernel-Moduls mit: sudo insmod mm.ko
